@@ -1,7 +1,10 @@
 {
-    "name" : "Around the world",
-    "author" : "",
-    "pages" : 223,
-    "rating" : 4.8,
-    "genres" : ["fantasy", "sci-fi"]
+    "author": "",
+    "genres": [
+        "fantasy",
+        "sci-fi"
+    ],
+    "name": "abc",
+    "pages": 223,
+    "rating": 4.8
 }

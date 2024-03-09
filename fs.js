@@ -13,3 +13,6 @@ const fs = require('fs')
 const file = fs.readFileSync('./data.json')
 const data = JSON.parse(file)
 console.log(data)
+data.name = 'abc'
+
+fs.writeFileSync('./data.json', JSON.stringify(data))
