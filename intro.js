@@ -1,3 +1,4 @@
+const http = require('http')
 /**
  * NodeJS
  * run time environment for JS
@@ -26,4 +27,9 @@
  * git push 
  */
 
-console.log('hii')
+// console.log('hii')
+http.createServer(function(request, response) {
+    response.write('hello')
+    response.end()
+}).listen(8000)
+console.log('Listening on port 8000...')
