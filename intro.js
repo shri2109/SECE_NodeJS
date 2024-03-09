@@ -1,3 +1,4 @@
+const fs = require('fs')
 const http = require('http')
 /**
  * NodeJS
@@ -29,7 +30,21 @@ const http = require('http')
 
 // console.log('hii')
 http.createServer(function(request, response) {
+    response.writeHead(200, {
+        'Content-Type' : 'text/html'
+        // 'Content-Type' : 'text/plain'
+    })
+    // const file = readFileSync('./index.html')
+    // response.write(file)
+    // response.end()
+
+    // fs.readFile('./index.html', function(error, file) {
+    //     response.write(file)
+    //     response.end()
+    // })
+
     response.write('hello')
     response.end()
-}).listen(8000)
-console.log('Listening on port 8000...')
+}).listen(8000, function() {
+    console.log('Listening on port 8000...')
+})
