@@ -16,6 +16,7 @@ const fs = require('fs')
 // console.log(data)
 // data.name = 'abc'
 // fs.writeFileSync('./data.json', JSON.stringify(data))
+// console.log('hii')
 
 // Asynchronous approach
 fs.readFile('./data.json', function(error, file) {
@@ -25,4 +26,6 @@ fs.readFile('./data.json', function(error, file) {
     fs.writeFile('./data.json', JSON.stringify(data), function() {
         console.log('file written successfully...')
     })
+    console.log('welcome')
 })
+console.log('hii')
