@@ -21,11 +21,21 @@ const http = require('http')
  * npm init -y
  */
 /**
+ * git config --global user.name '<user_name>'
+ * git config --global user.email <emailID>
+ * 
  * git clone <link>
  * 
  * git add .
  * git commit -m ""
  * git push 
+ */
+
+/**
+ * 200 - ok
+ * 201 - created
+ * 404 - page not found
+ * 500 - internal server error
  */
 
 // console.log('hii')
